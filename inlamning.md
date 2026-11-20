@@ -16,7 +16,7 @@ NOT: Ni ska även ha skapat en user som bara har access till databasen my_databa
 
 Skärmdump av databas på MongoDB Atlas med skapad movie-collection med data:
 
-![MongoDBAtlas](bilder/bild3.png)
+![MongoDBAtlas](bilder/mongodb.png)
 
 
 
