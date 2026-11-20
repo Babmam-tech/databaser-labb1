@@ -24,7 +24,7 @@ Skärmdump av databas på MongoDB Atlas med skapad movie-collection med data:
 
 Skärmdump som visar att ni klarat av första två sidorna på sqlbolt.com:s interaktiva tutorial
 
-![SQL-bolt](bilder/bild4.png)
+![SQL-bolt](bilder/sqlbolt2.png)
 
 
 # Frågor som ni ska svara på (G-nivå)
