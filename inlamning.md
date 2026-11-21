@@ -6,7 +6,7 @@
 
 Skärmdump som visar database explorer i IntelliJ med skapad person-tabell med data:
 
-![MySQL i database explorer](bilder/bild2.png)
+![MySQL i database explorer](bilder/mysql.png)
 
 NOT: Ni ska även ha skapat en user som bara har access till databasen my_database, ingen bild krävs
 
@@ -90,7 +90,7 @@ SELECT first_name,last_name FROM person;
 SELECT first_name,last_name, income FROM person WHERE income > 30000;
 
 12. Hämta alla personer födda före den 1 januari 1990.
-SELECT * FROM person WHERE birth_date < '1990-01-01';
+SELECT * FROM person WHERE dob < '1990-01-01';
 
 13. Hämta förnamn, efternamn och inkomst, sorterat efter inkomst från högst till lägst.
 SELECT first_name,last_name, income FROM person ORDER BY income DESC;
