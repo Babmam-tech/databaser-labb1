@@ -66,23 +66,37 @@ och köpen pekar på kunden med en främmande nyckeln.
 ## NoSQL
 
 7. Vad menas med NoSQL, och hur kan information organiseras i en sådan databas?
+NoSQL betyder att det är databaser som inte använder sig av tabeller med rader och kolumner som SQL.
+Infromationen kan organiseras istället som dokument som i mongoDB, där varje film som man la till
+var ett dokument som ser ut som JSON. En annat sätt är nyckel-värde-par som i Redis där man sparar
+värde under en nyckel.
 8. Ge ett exempel på när en NoSQL-databas kan vara lämplig och förklara varför.
+Ett bra exempel skulle kunna vara en leaderboard i ett spel där man vill visa de bästa spelarna.
+Redis passar perfekt här eftersom all data sparas i RAM, vilket gör den mycket snabbare än en
+databas som läser från en hårddisk. Det är viktigt eftersom poängen ändras hela tiden och många
+spelare kollar på leaderboard samtidigt.
 
 ## SQL – hämta data från tabellen person
 
 Skriv en SQL-fråga som svar på varje uppgift.
 
 9. Hämta alla kolumner för alla personer i tabellen.
+SELECT * FROM person;
 
 10. Hämta endast förnamn och efternamn för alla personer.
+SELECT first_name,last_name FROM person;
 
 11. Hämta förnamn, efternamn och inkomst för personer med en inkomst över 30 000.
+SELECT first_name,last_name, income FROM person WHERE income > 30000;
 
 12. Hämta alla personer födda före den 1 januari 1990.
+SELECT * FROM person WHERE birth_date < '1990-01-01';
 
 13. Hämta förnamn, efternamn och inkomst, sorterat efter inkomst från högst till lägst.
+SELECT first_name,last_name, income FROM person ORDER BY income DESC;
 
 14. Räkna hur många personer som finns i tabellen.
+SELECT COUNT(*) FROM person;
 
 
 # VG-nivå
